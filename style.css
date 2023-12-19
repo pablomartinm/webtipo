@@ -1,0 +1,238 @@
+
+@font-face {
+    font-family: "Pleamar";
+    src: url("fonts/pleamar-VF.ttf") format("truetype");
+}
+
+:root {
+    --pleamar-zzzz: 350; /* Adjusted value for the 'ZZZZ' axis to try for a more 'regular' weight */
+}
+
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+
+body, html {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 4em;
+    padding: 0;
+    height: auto; /* Change from 100vh to auto to prevent cutoff */
+    overflow-x: hidden;
+    align-items: center;
+    background: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Pleamar";
+    font-variation-settings: "ZZZZ" var(--pleamar-zzzz);
+    font-size: 300px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 0em; 
+    color: #0E2C5E;
+}
+
+
+input[type="range"] {
+    width: 50%;
+    max-width: 600px;
+    margin-bottom: 20px auto;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Necesario para estilo personalizado en Chrome */
+    width: 50%; /* Ajustamos el ancho para que sea 50% del contenedor */
+    max-width: 600px; /* Ajustamos un ancho máximo */
+    height: 25px; /* Ajustamos la altura */
+    margin-bottom: 20px auto; /* Añadimos margen arriba y abajo y centramos horizontalmente */
+    background: transparent; /* Hacemos el fondo transparente para que se vea el track */
+}
+
+/* Estilo para el "track" del slider en Chrome, Safari, y Opera */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8.4px;
+    background: #0E2C5E;
+    border-radius: 3.4px;
+}
+
+/* Estilo para el "thumb" del slider en Chrome, Safari, y Opera */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -6px; /* Ajustamos para que el thumb se alinee con el track */
+    border: 1px solid #000000;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #0E2C5E;
+    cursor: pointer;
+}
+
+/* Estilo para el "track" del slider en Firefox */
+input[type="range"]::-moz-range-track {
+    height: 4px;
+    background: #0E2C5E;
+    border-radius: 3.4px;
+}
+
+/* Estilo para el "thumb" del slider en Firefox */
+input[type="range"]::-moz-range-thumb {
+    border: 1px solid #000000;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #0E2C5E;
+    cursor: pointer;
+}
+
+/* Estilo para el "track" del slider en IE */
+input[type="range"]::-ms-track {
+    height: 8.4px;
+    background: #0E2C5E;
+    border-radius: 3.4px;
+}
+
+/* Estilo para el "thumb" del slider en IE */
+input[type="range"]::-ms-thumb {
+    border: 1px solid #000000;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #0E2C5E;
+    cursor: pointer;
+}
+
+/* Styles for the Two-Column Section */
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.left-column, .right-column {
+    width: 48%; /* Adjust the width as needed */
+}
+
+.right-column img {
+    margin-bottom: 10px; /* Spacing between images */
+    position: relative; /* Ensure relative positioning within the document flow */
+    z-index: 1; /* Standard z-index for proper stacking */
+    width: 100%; /* Full width to prevent horizontal overflow */
+    margin-top: 20px;
+}
+
+/* Ensure each section is contained and does not overflow */
+.section {
+    overflow: hidden; /* Hide overflow to prevent cutoff */
+    margin-bottom: 20px; /* Add bottom margin for spacing between sections */
+}
+
+/* Adjustments for map and new section for proper layering and visibility */
+.map-section, .new-section {
+    position: relative; /* Ensure relative positioning within the document flow */
+    z-index: 1; /* Standard z-index for proper stacking */
+    width: 100%; /* Full width to prevent horizontal overflow */
+    margin-top: 20px; /* Ensure spacing from previous content */
+}
+
+.map-section img {
+    width: 100%; /* Sets the image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 2400px; /* Maximum height of the image - adjust as needed */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Space below the title */
+}
+
+/* .text-tab, .image-tab {
+    flex: 1; 
+    margin: 0 10px; 
+} */
+
+.text-tab {
+    display: flex;        /* Alinea los elementos de forma horizontal */
+    align-items: center;  /* Centra los elementos verticalmente */
+    gap: 10px;            /* Espacio entre los elementos */
+}
+
+
+/* Responsive image */
+.image-tab img {
+    width: 100%;
+    height: auto;
+    max-height: 100px
+}
+
+#h3-playa-1 {
+    font-family: "Pleamar";
+    font-variation-settings: "ZZZZ" var(--pleamar-zzzz-h3-playa-1);
+    color: #001C63;
+    font-weight: 500;
+    font-size: 90px;
+    margin: 0;
+    padding-top: 0em; 
+}
+
+#h3-playa-2 {
+    font-family: "Pleamar";
+    font-variation-settings: "ZZZZ" var(--pleamar-zzzz-h3-playa-2);
+    color: #001C63;
+    font-weight: 500;
+    font-size: 90px;
+    margin: 0;
+    padding-top: 0em; 
+}
+
+#h3-playa-3 {
+    font-family: "Pleamar";
+    font-variation-settings: "ZZZZ" var(--pleamar-zzzz-h3-playa-3);
+    color: #001C63;
+    font-weight: 500;
+    font-size: 90px;
+    margin: 0;
+    padding-top: 0em; 
+}
+
+#h3-playa-4 {
+    font-family: "Pleamar";
+    font-variation-settings: "ZZZZ" var(--pleamar-zzzz-h3-playa-4);
+    color: #001C63;
+    font-weight: 500;
+    font-size: 90px;
+    margin: 0;
+    padding-top: 0em; 
+}
+
+.playa{
+    text-align: left;
+}
+
+.right-column {
+    display: flex; /* Align children elements (divs with images and titles) in a row */
+    justify-content: space-around; /* Evenly distribute the space around the elements */
+    align-items: flex-start; /* Align items to the start of the container on the cross axis */
+    margin-top: 20px;
+}
+
+.letras {
+    max-width: 250px; /* Control the image size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display image as block to allow title to sit below */
+    margin-bottom: 10px; /* Spacing below the image */
+}
+
+.image-title {
+    display: block; /* Ensure the title is on a new line */
+    text-align: center; /* Center the title text below the image */
+    margin-top: 5px; /* Spacing between image and title */
+}
